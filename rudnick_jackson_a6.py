@@ -56,7 +56,7 @@ def minimax_search(state, player):
 	actions = get_actions(state)
 	best_action = None
 
-	# Terminal checks using explicit winner and draw
+	# check terminal state
 	u = utility(state)
 	if u == 1:
 		return 1, None
@@ -93,10 +93,9 @@ if __name__ == "__main__":
 	while get_actions(state):
 		print_state(state)
 		actions = get_actions(state)
-		print(f"Available actions: {actions}")
-		row = int(input("Enter row (0-2): "))
-		col = int(input("Enter column (0-2): "))
-		action = (row, col)
+		row = int(input("Enter row (1-3): "))
+		col = int(input("Enter column (1-3): "))
+		action = (row-1, col-1)
 		if action not in actions:
 			print("Invalid action. Try again.")
 			continue
