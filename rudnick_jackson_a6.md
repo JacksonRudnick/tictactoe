@@ -1,0 +1,1 @@
+It went pretty easy for the most part. I took the sort of context from the last assignment and reworked how the function work with the same labeling so that it was easier to understand. I did have some bugs where the min player would actually work in favor of the max player and other weird events like that but once those were fixed, it went smoothly.
